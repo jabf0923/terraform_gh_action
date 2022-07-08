@@ -25,6 +25,11 @@ terraform {
       version = ">= 2.0.1"
     }
   }
+  cloud {
+    organization = "alce2020"
 
-  required_version = ">= 0.14"
+    workspaces {
+      name = "gh-action-matic"
+    }
+  }
 }
