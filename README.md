@@ -1,6 +1,6 @@
 # terraform_gh_action
 
-This repo holds the terraform files needed to provision an EKS cluster to AWS via GitHub Actions on Pull Request.  It uses the EKS module/K8s provider and a Terraform Cloud account (trial version).`
+This repo holds the terraform files needed to provision an EKS cluster to AWS via GitHub Actions on Pull Request.  It uses the EKS module/K8s provider and a Terraform Cloud account (trial version).
 
 The GitHub Action performs terraform fmt, init, validate, etc.. if all steps succeded then connects to Terraform Cloud runs the plan waits for approval and applies the configuration. 
 
